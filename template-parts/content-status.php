@@ -6,8 +6,8 @@
                 <?php echo get_the_date('Y-m-d'); ?>
             </a>
         </header>
-        <?php if (get_the_excerpt()) : ?>
-            <div class="description" itemprop="about"><?php the_excerpt(); ?></div>
+        <?php if (get_the_content()) : ?>
+            <div class="description" itemprop="about"><?php the_content(); ?></div>
         <?php endif; ?>
     </div>
 </article>
